@@ -1,14 +1,18 @@
 import React from "react";
 
+//Componente usado para a montagem do layout dos outros 4 componentes abaixo
+import Card from './components/layout/Card';
+
+//Componentes funcionais, onde cada um dele foi trabalhado um aspecto fundamental do React
 import Primeiro from './components/Primeiro';
 import ComParametro from './components/ComParametro';
 import ComFilhos from './components/ComFilhos';
-import Card from './components/layout/Card';
+import Repeticao from "./components/Repeticao";
 
 import "./App.css";
 
 export default props => (
-    
+
     <div className="App">
 
         <Card titulo="#01 - Primeiro Componente - Com dois textos fixos">
@@ -28,6 +32,10 @@ export default props => (
                     <li>Tião</li>
                 </ul>
             </ComFilhos>
+        </Card>
+
+        <Card titulo="#04 - Repeticao - Rodando um loop de produtos via map">
+            <Repeticao />
         </Card>
         
     </div>
