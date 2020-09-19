@@ -8,17 +8,18 @@ import Card from './components/layout/Card';
 import "./App.css";
 
 export default props => (
+    
     <div className="App">
 
-        <Card titulo="Primeiro Componente - Com dois textos fixos">
+        <Card titulo="#01 - Primeiro Componente - Com dois textos fixos">
             <Primeiro />
         </Card>
 
-        <Card titulo="ComParametro - Com dois textos passados por parãmetro">
+        <Card titulo="#02 - ComParametro - Com dois textos passados por parãmetro">
             <ComParametro titulo="Esse é o título" subtitulo="Esse é o subtítulo"/>
         </Card>
       
-        <Card titulo="ComFilhos - Usando children para passar dados na chamada do componente">
+        <Card titulo="#03 - ComFilhos - Usando children para passar dados na chamada do componente">
             <ComFilhos>
                 <ul>
                     <li>Ana</li>
