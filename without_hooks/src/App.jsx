@@ -4,12 +4,12 @@ import React from "react";
 import Card from './components/layout/Card';
 
 //Componentes funcionais, onde cada um dele foi trabalhado um aspecto fundamental do React
-import Primeiro from './components/Primeiro';
-import ComParametro from './components/ComParametro';
-import ComFilhos from './components/ComFilhos';
-import Repeticao from "./components/Repeticao";
-import Condicional from "./components/Condicional";
-import CondicionalComIf from "./components/CondicionalComIf";
+import Primeiro from './components/basicos/Primeiro';
+import ComParametro from './components/basicos/ComParametro';
+import ComFilhos from './components/basicos/ComFilhos';
+import Repeticao from "./components/basicos/Repeticao";
+import Condicional from "./components/basicos/Condicional";
+import CondicionalComIf from "./components/basicos/CondicionalComIf";
 
 import "./App.css";
 

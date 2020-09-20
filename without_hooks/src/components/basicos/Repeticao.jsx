@@ -1,7 +1,7 @@
 import React from "react";
 
 //Transformando um array de produtos(objetos) em trechos JSX
-import produtos from '../components/data/produtos';
+import produtos from '../data/produtos';
 
 export default props => {
     
