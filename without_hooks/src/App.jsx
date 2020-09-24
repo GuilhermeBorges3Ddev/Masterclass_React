@@ -13,6 +13,7 @@ import CondicionalComIf from "./components/basicos/CondicionalComIf";
 
 //Componentes mais elaborados (Segunda parte)
 import Pai from "./components/comunicacao/direta/Pai";
+import Super from "./components/comunicacao/indireta/Super";
 
 import "./App.css";
 
@@ -70,10 +71,17 @@ export default props => (
         </Card>
 
         <Card 
-            titulo="#07 - Comunicação Direta - Mostra 'Par' para um elemento par ou 'Ímpar' mas usa um componente externo para operar"
+            titulo="#07 - Comunicação Direta"
             color="Pink"
         >
             <Pai sobrenome="Freitas" />
+        </Card>
+
+        <Card 
+            titulo="#07 - Comunicação Indireta"
+            color="Cyan"
+        >
+            <Super />
         </Card>
         
     </div>
