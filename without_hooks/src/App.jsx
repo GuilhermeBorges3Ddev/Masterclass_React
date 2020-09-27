@@ -14,6 +14,7 @@ import CondicionalComIf from "./components/basicos/CondicionalComIf";
 //Componentes mais elaborados (Segunda parte)
 import Pai from "./components/comunicacao/direta/Pai";
 import Super from "./components/comunicacao/indireta/Super";
+import Input from "./components/form/Input";
 
 import "./App.css";
 
@@ -78,10 +79,17 @@ export default props => (
         </Card>
 
         <Card 
-            titulo="#07 - Comunicação Indireta"
+            titulo="#08 - Comunicação Indireta"
             color="Cyan"
         >
             <Super />
+        </Card>
+
+        <Card 
+            titulo="#09 - Input"
+            color="Orange"
+        >
+            <Input />
         </Card>
         
     </div>
