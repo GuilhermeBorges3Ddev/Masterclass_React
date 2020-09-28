@@ -15,82 +15,99 @@ import CondicionalComIf from "./components/basicos/CondicionalComIf";
 import Pai from "./components/comunicacao/direta/Pai";
 import Super from "./components/comunicacao/indireta/Super";
 import Input from "./components/form/Input";
+import Contador from "./components/contador/Contador";
 
 import "./App.css";
+
 
 export default props => (
 
     <div className="App">
 
-        <Card 
-            titulo="#01 - Primeiro Componente - Com dois textos fixos"
-            color=""
-        >
-            <Primeiro />
-        </Card>
+        <h1>Fundamentos React</h1>
 
-        <Card 
-            titulo="#02 - ComParametro - Com dois textos passados por parãmetro"
-            color="#354458"
-        >
-            <ComParametro titulo="Esse é o título" subtitulo="Esse é o subtítulo"/>
-        </Card>
-      
-        <Card 
-            titulo="#03 - ComFilhos - Usando children para passar dados na chamada do componente"
-            color="#DE593A"
-        >
-            <ComFilhos>
-                <ul>
-                    <li>Ana</li>
-                    <li>Paula</li>
-                    <li>Bruno</li>
-                    <li>Tião</li>
-                </ul>
-            </ComFilhos>
-        </Card>
+        <div className="Cards">
 
-        <Card 
-            titulo="#04 - Repeticao - Rodando um loop de produtos via map"
-            color="#8C4646"    
-        >
-            <Repeticao />
-        </Card>
+            <Card 
+                titulo="#01 - Primeiro Componente - Com dois textos fixos"
+                color=""
+            >
+                <Primeiro />
+            </Card>
 
-        <Card 
-            titulo="#05 - Condicional Simples - Exibindo 'Par' para um elemento par ou 'Ímpar' caso contrário"
-            color="#E94C6F"    
-        >
-            <Condicional numero={11} />
-        </Card>
+            <Card 
+                titulo="#02 - ComParametro - Com dois textos passados por parãmetro"
+                color="#354458"
+            >
+                <ComParametro titulo="Esse é o título" subtitulo="Esse é o subtítulo"/>
+            </Card>
+        
+            <Card 
+                titulo="#03 - ComFilhos - Usando children para passar dados na chamada do componente"
+                color="#DE593A"
+            >
+                <ComFilhos>
+                    <ul>
+                        <li>Ana</li>
+                        <li>Paula</li>
+                        <li>Bruno</li>
+                        <li>Tião</li>
+                    </ul>
+                </ComFilhos>
+            </Card>
 
-        <Card 
-            titulo="#06 - Condicional Elaborada - Mostra 'Par' para um elemento par ou 'Ímpar' mas usa um componente externo para operar"
-            color="#FA6900"
-        >
-            <CondicionalComIf numero={10} />
-        </Card>
+            <Card 
+                titulo="#04 - Repeticao - Rodando um loop de produtos via map"
+                color="#8C4646"    
+            >
+                <Repeticao />
+            </Card>
 
-        <Card 
-            titulo="#07 - Comunicação Direta"
-            color="Pink"
-        >
-            <Pai sobrenome="Freitas" />
-        </Card>
+            <Card 
+                titulo="#05 - Condicional Simples - Exibindo 'Par' para um elemento par ou 'Ímpar' caso contrário"
+                color="#E94C6F"    
+            >
+                <Condicional numero={11} />
+            </Card>
 
-        <Card 
-            titulo="#08 - Comunicação Indireta"
-            color="Cyan"
-        >
-            <Super />
-        </Card>
+            <Card 
+                titulo="#06 - Condicional Elaborada - Mostra 'Par' para um elemento par ou 'Ímpar' mas usa um componente externo para operar"
+                color="#FA6900"
+            >
+                <CondicionalComIf numero={10} />
+            </Card>
 
-        <Card 
-            titulo="#09 - Input"
-            color="Orange"
-        >
-            <Input />
-        </Card>
+            <Card 
+                titulo="#07 - Comunicação Direta"
+                color="Pink"
+            >
+                <Pai sobrenome="Freitas" />
+            </Card>
+
+            <Card 
+                titulo="#08 - Comunicação Indireta"
+                color="Cyan"
+            >
+                <Super />
+            </Card>
+
+            <Card 
+                titulo="#09 - Input"
+                color="Orange"
+            >
+                <Input />
+            </Card>
+
+            <Card 
+                titulo="#10 - Input"
+                color="darkBlue"
+            >
+                <Contador passo={10} valor={100} />
+            </Card>
+
+        </div>
+
+        
         
     </div>
 );
