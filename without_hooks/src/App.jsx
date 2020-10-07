@@ -99,7 +99,7 @@ export default props => (
             </Card>
 
             <Card 
-                titulo="#10 - Input"
+                titulo="#10 - Contador"
                 color="darkBlue"
             >
                 <Contador passo={10} valor={100} />
