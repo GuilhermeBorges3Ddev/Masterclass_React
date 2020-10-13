@@ -111,7 +111,7 @@ export default props => (
                 titulo="#11 - Mega Sena"
                 color="#73503C"
             >
-                <Mega />
+                <Mega qtdeNumero={8} />
             </Card>
 
         </div>
