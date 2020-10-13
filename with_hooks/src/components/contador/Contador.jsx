@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Botoes from './Botoes';
 import "./Contador.css";
 
-//
+//The three componnents that mounts the main componnent counter 
 import Display from "./Display.jsx";
 import PassoForm from "./PassoForm.jsx";
+import Botoes from './Botoes';
 
 class Contador extends Component {
 
